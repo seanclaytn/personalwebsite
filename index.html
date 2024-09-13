@@ -18,6 +18,13 @@
             text-align: center;
             padding-top: 20px;
         }
+        .fade-image {
+            width: 100%;
+            height: auto;
+            position: relative;
+            -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        }
 
         img {
             width: 100%;
@@ -28,7 +35,7 @@
 <body>
     <p>Here's the stuff</p>
     <div class="image-container">
-        <img src="landscape.png" alt="Landscape">
+        <img src="landscape.png" alt="Landscape" class="fade-image">
     </div>
     <p>Uh oh, a new phase</p>
     <p>A blogging phase</p>
